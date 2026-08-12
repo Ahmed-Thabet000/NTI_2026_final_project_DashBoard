@@ -1,0 +1,20 @@
+h1{
+    color:  rgb(8, 8, 87);
+}
+
+h1:hover{
+    color:  rgb(57, 57, 198);
+        transform: scale(1.02);
+    transition: all 0.25s ease;
+
+}
+
+.home-card{
+    background-color: rgb(8, 8, 87) !important;
+}
+
+.home-card:hover {
+    background-color: rgb(57, 57, 198) !important;
+    transform: scale(1.05);
+    transition: all 0.25s ease;
+}
