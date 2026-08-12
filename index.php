@@ -51,7 +51,7 @@ include('./shared/nav.php');
 <h1 class="text-center fw-bold  py-3 title" style="margin-top: 100px; ">Welcome to the DashBoard</h1>
 <div class="container pt-5 ">
     <div class="row ">
-        <div class="col-lg-4 col=md-6 col-sm-12 d-flex justify-content-center mb-5">
+        <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center mb-5">
             <div class="card bg-primary  shadow-lg home-card" style="width: 18rem;">
                 <div class="card-body d-flex flex-column align-items-center">
                     <i class="bi bi-bag-plus-fill text-white fs-1 py-4"></i>
@@ -60,7 +60,7 @@ include('./shared/nav.php');
                 </div>
             </div>
         </div>
-        <div class="col-lg-4 col=md-6 col-sm-12 d-flex justify-content-center  mb-5">
+        <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center  mb-5">
             <div class="card bg-primary  shadow-lg home-card" style="width: 18rem;">
                 <div class="card-body d-flex flex-column align-items-center">
                     <i class="bi bi-collection-fill text-white fs-1 py-4"></i>
@@ -69,7 +69,7 @@ include('./shared/nav.php');
                 </div>
             </div>
         </div>
-        <div class="col-lg-4 col=md-6 col-sm-12 d-flex justify-content-center  mb-5">
+        <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center  mb-5">
             <div class="card bg-primary  shadow-lg home-card" style="width: 18rem;">
                 <div class="card-body d-flex flex-column align-items-center">
                     <i class="bi bi-cart-plus-fill text-white fs-1 py-4"></i>
@@ -78,7 +78,7 @@ include('./shared/nav.php');
                 </div>
             </div>
         </div>
-        <div class="col-lg-4 col=md-6 col-sm-12 d-flex justify-content-center  mb-5">
+        <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center  mb-5">
             <div class="card bg-primary  shadow-lg home-card" style="width: 18rem;">
                 <div class="card-body d-flex flex-column align-items-center">
                     <i class="bi bi-person-fill text-white fs-1 py-4"></i>
@@ -87,7 +87,7 @@ include('./shared/nav.php');
                 </div>
             </div>
         </div>
-        <div class="col-lg-4 col=md-6 col-sm-12 d-flex justify-content-center  mb-5">
+        <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center  mb-5">
             <div class="card bg-primary  shadow-lg home-card" style="width: 18rem;">
                 <div class="card-body d-flex flex-column align-items-center">
                     <i class="bi bi-headset text-white fs-1 py-4"></i>
@@ -96,7 +96,7 @@ include('./shared/nav.php');
                 </div>
             </div>
         </div>
-        <div class="col-lg-4 col=md-6 col-sm-12 d-flex justify-content-center  mb-5">
+        <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center  mb-5">
             <div class="card bg-primary  shadow-lg home-card" style="width: 18rem;">
                 <div class="card-body d-flex flex-column align-items-center">
                     <i class="bi bi-buildings-fill text-white fs-1 py-4"></i>
