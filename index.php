@@ -9,6 +9,7 @@ if (mysqli_num_rows($countCat) > 0) {
     $countCategories = $row['total_cat'];
 }
 
+// test
 $countQuery = "SELECT count(*) as total_Pro FROM products";
 $countPro = mysqli_query($conn, $countQuery);
 
