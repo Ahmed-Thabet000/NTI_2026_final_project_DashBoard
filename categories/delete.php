@@ -1,6 +1,7 @@
 <?php
 session_start();
-include '../shared/db.php';
+include '../shared/connect.php';
+
 
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
@@ -13,4 +14,6 @@ if (isset($_GET['id'])) {
 }
 header("Location: list.php");
 exit();
+
+
 ?>

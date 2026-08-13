@@ -91,7 +91,7 @@ include('../shared/nav.php');
                         <td>
                 <a
                     href="edit_product.php?id=<?php echo $product['id']; ?>"
-                    class="btn btn-warning btn-sm"
+                    class="btn btn-primary btn-sm"
                     title="Edit Product"
                 >
                     <i class="bi bi-pencil-square"></i>
@@ -121,7 +121,7 @@ include('../shared/nav.php');
 
         <a
             href="add_product.php"
-            class="btn btn-primary"
+            class="btn add-btn text-white"
         >
             + Add Product
         </a>

@@ -1,30 +1,56 @@
 <?php
 session_start();
-include '../shared/db.php';
+include '../shared/connect.php';
 
 $id = $_GET['id'] ?? null;
-if (!$id) { header("Location: list.php"); exit(); }
-
-$stmt = $conn->prepare("SELECT * FROM categories WHERE id = ?");
-$stmt->execute([$id]);
-$cat = $stmt->fetch(PDO::FETCH_ASSOC);
-if (!$cat) { header("Location: list.php"); exit(); }
-
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $name = trim($_POST['name']);
-    $update = $conn->prepare("UPDATE categories SET name = ? WHERE id = ?");
-    $update->execute([$name, $id]);
-    
-    $_SESSION['message'] = "Successfully Updated!";
+if (!$id) {
     header("Location: list.php");
     exit();
 }
 
+$stmt = $conn->prepare("SELECT * FROM categories WHERE id = ?");
+$stmt->bind_param("i", $id);
+$stmt->execute();
+
+$result = $stmt->get_result();
+$cat = $result->fetch_assoc();
+if (!$cat) {
+    header("Location: list.php");
+    exit();
+}
+
+$error = '';
+
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $name = trim($_POST['name']);
+
+    if (strlen($name) < 3) {
+        $error = "Category name must be at least 3 characters.";
+    } else if (strlen($name) > 30) {
+        $error = "Category name must be at most 30 characters.";
+    } else {
+        $update = $conn->prepare("UPDATE categories SET name = ? WHERE id = ?");
+        $update->bind_param("si", $name, $id);
+        $update->execute();
+
+        $_SESSION['message'] = "Successfully Updated!";
+        header("Location: list.php");
+        exit();
+    }
+}
+
 include '../shared/header.php';
+include('../shared/nav.php');
+
 ?>
 
 <div style="max-width: 500px; margin: 60px auto; background: #fff; padding: 40px; border-radius: 12px; box-shadow: 0 5px 25px rgba(0,0,0,0.06); border: 1px solid #eaeaea;">
     <h2 style="margin-bottom: 25px; color: #0b132b; font-weight: 600; border-left: 4px solid #0b132b; padding-left: 12px;">Edit Category</h2>
+    <?php if (!empty($error)): ?>
+        <div class="alert alert-danger">
+            <?php echo $error; ?>
+        </div>
+    <?php endif; ?>
     <form method="POST">
         <div style="margin-bottom: 20px;">
             <label style="display: block; font-weight: 500; margin-bottom: 6px; color: #444; font-size: 14px;">Category Name</label>
