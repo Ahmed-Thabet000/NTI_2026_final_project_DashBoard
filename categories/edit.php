@@ -4,7 +4,6 @@ include '../shared/connect.php';
 
 $id = $_GET['id'];
 
-// جلب البيانات للتعديل
 $stmt = $conn->prepare("SELECT * FROM categories WHERE id = ?");
 $stmt->bind_param("i", $id);
 $stmt->execute();
@@ -21,10 +20,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 }
 
 include '../shared/header.php';
-include '../shared/nav.php'; // <--- استدعاء الـ Navbar هنا عشان تثبت في صفحة التعديل
+include '../shared/nav.php'; 
 ?>
 
-<!-- مسافة أمان من الأعلى (120px) عشان الفورم ينزل تحت الـ Navbar الثابتة وما يختفيش وراها -->
 <div style="max-width: 500px; margin: 120px auto 40px auto; padding: 40px; background: #fff; border-radius: 12px; box-shadow: 0 4px 6px rgb(8, 8, 87)rgba(0,0,0,0.05); border: 1px solid #eaeaea;">
     <h2 style="color: #0b132b; border-left: 4px solid #0b132b; padding-left: 12px; margin-bottom: 25px; font-weight: 600;">Edit Category</h2>
     

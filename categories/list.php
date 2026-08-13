@@ -2,7 +2,7 @@
 session_start();
 include '../shared/connect.php';
 include '../shared/header.php';
-include '../shared/nav.php'; // <--- ضيف السطر ده هنا عشان تظهر الـ Navbar
+include '../shared/nav.php';
 
 $success_message = "";
 if (isset($_SESSION['message'])) {
@@ -14,7 +14,6 @@ $result = $conn->query("SELECT * FROM categories");
 $categories = $result->fetch_all(MYSQLI_ASSOC);
 ?>
 
-<!-- مسافة أمان من الأعلى عشان الجدول ما يدخلش تحت الهيدر الثابت -->
 <div style="max-width: 1000px; margin: 120px auto 40px auto; padding: 0 20px;">
     <?php if (!empty($success_message)): ?>
         <div style="background: #d4edda; color: #155724; padding: 15px; border-radius: 8px; margin-bottom: 20px; text-align: center;">✅ <?= htmlspecialchars($success_message); ?></div>
