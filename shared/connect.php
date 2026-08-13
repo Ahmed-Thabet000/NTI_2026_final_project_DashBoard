@@ -2,6 +2,6 @@
     $host = "localhost";
     $username = "root";
     $password = "";
-    $dataBase = "mydashboard";
+    $dataBase = "nti_dashboard";
     $conn = mysqli_connect($host , $username , $password , $dataBase);
 ?>

@@ -47,8 +47,8 @@
                         Employees
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="">Add Employees</a></li>
-                        <li><a class="dropdown-item" href="">List Employees</a></li>
+                        <li><a class="dropdown-item" href="/Summer_training_2026/NTI_final_project/NTI_2026_final_project_DashBoard/Employees/add.php">Add Employees</a></li>
+                        <li><a class="dropdown-item" href="/Summer_training_2026/NTI_final_project/NTI_2026_final_project_DashBoard/Employees/list.php">List Employees</a></li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown">

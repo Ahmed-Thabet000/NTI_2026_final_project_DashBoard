@@ -9,7 +9,7 @@
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     
-<link rel="stylesheet" href="CSS/master.css">
+<link rel="stylesheet" href="/Summer_training_2026/NTI_final_project/NTI_2026_final_project_DashBoard/CSS/master.css">
 </head>
 
 <body style="height: 110vh;">
