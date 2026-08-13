@@ -11,29 +11,29 @@
                         Categories
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="">Add Category</a></li>
-                        <li><a class="dropdown-item" href="">List Categories</a></li>
+                        <li><a class="dropdown-item" href="/Summer_training_2026/NTI_final_project/NTI_2026_final_project_DashBoard/categories/add.php">Add Category</a></li>
+                        <li><a class="dropdown-item" href="/Summer_training_2026/NTI_final_project/NTI_2026_final_project_DashBoard/categories/list.php">List Categories</a></li>
                     </ul>
                 </li>
-               <li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-        Products
-    </a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Products
+                    </a>
 
-    <ul class="dropdown-menu">
-        <li>
-            <a class="dropdown-item" href="/NTI_2026_final_project_DashBoard/products/add_product.php">
-                Add Product
-            </a>
-        </li>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a class="dropdown-item" href="/Summer_training_2026/NTI_final_project/NTI_2026_final_project_DashBoard/products/add_product.php">
+                                Add Product
+                            </a>
+                        </li>
 
-        <li>
-            <a class="dropdown-item" href="/NTI_2026_final_project_DashBoard/products/list_products.php">
-                List Products
-            </a>
-        </li>
-    </ul>
-</li>
+                        <li>
+                            <a class="dropdown-item" href="/Summer_training_2026/NTI_final_project/NTI_2026_final_project_DashBoard/products/list_products.php">
+                                List Products
+                            </a>
+                        </li>
+                    </ul>
+                </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Clients
@@ -47,9 +47,19 @@
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Brands
                     </a>
+
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="">Add Brands</a></li>
-                        <li><a class="dropdown-item" href="">List Brands</a></li>
+                        <li>
+                            <a class="dropdown-item" href="/Summer_training_2026/NTI_final_project/NTI_2026_final_project_DashBoard/Brands/add.php">
+                                Add Brand
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item" href="/Summer_training_2026/NTI_final_project/NTI_2026_final_project_DashBoard/Brands/list.php">
+                                List Brands
+                            </a>
+                        </li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
@@ -66,8 +76,8 @@
                         Partners
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="">Add Partners</a></li>
-                        <li><a class="dropdown-item" href="">List Partners</a></li>
+                        <li><a class="dropdown-item" href="/Summer_training_2026/NTI_final_project/NTI_2026_final_project_DashBoard/Partners/add_partner.php">Add Partners</a></li>
+                        <li><a class="dropdown-item" href="/Summer_training_2026/NTI_final_project/NTI_2026_final_project_DashBoard/Partners/list_partner.php">List Partners</a></li>
                     </ul>
                 </li>
             </ul>

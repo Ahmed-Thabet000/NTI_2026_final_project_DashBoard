@@ -65,7 +65,7 @@ if (isset($_POST['add_product'])) {
     if (mysqli_stmt_execute($stmt)) {
         $message = "Product added successfully!";
       
-            header("Location: ../index.php");
+            header("Location: ./list_products.php");
             // exit;
     } else {
         $message = "Error: " . mysqli_error($conn);
@@ -83,7 +83,7 @@ include('../shared/nav.php');
 
 ?>
 
-<div class="container" style="margin-top: 120px;">
+<div class="container" style="margin-top: 120px; min-height: 140vh;">
 
     <h1 class="text-center fw-bold mb-5">
         Add Product
@@ -250,7 +250,7 @@ include('../shared/nav.php');
             <button
                 type="submit"
                 name="add_product"
-                class="btn btn-primary px-4"
+                class="add-btn btn text-white px-4"
             >
                 Add Product
             </button>
