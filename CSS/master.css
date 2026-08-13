@@ -13,14 +13,82 @@ h1,
 
 } */
 
-.home-card {
-    background-color: rgb(8, 8, 87) !important;
+.stat-card-link{
+    width: 22rem;
+    max-width: 100%;
 }
 
-.home-card:hover {
-    background-color: rgb(57, 57, 198) !important;
-    transform: scale(1.05);
-    transition: all 0.25s ease;
+.stat-card {
+    width: 22rem;
+    max-width: 100%;
+    background-color: rgb(8, 8, 87);
+    min-height: 240px;
+    border-radius: 15px;
+    margin-top: 20px;
+    overflow: hidden;
+    position: relative;
+    padding: 30px;
+    transition: all 0.2s ease-in-out;
+}
+
+.circle-top {
+    width: 150px;
+    height: 150px;
+    background-color: rgba(255, 255, 255, 0.1);
+    position: absolute;
+    top: -50px;
+    right: -40px;
+    border-radius: 100%;
+
+}
+
+.circle-bottom {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.1);
+    position: absolute;
+    bottom: -50px;
+    left: -40px;
+    border-radius: 100%;
+
+}
+
+.top-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.icon-card {
+    width: 60px;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.13);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.arrow-card {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.11);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.13);
+}
+
+.stat-card:hover {
+    transform: translateY(-20px);
+}
+
+.stat-card:hover .arrow-card {
+    transform: translate(4px, -4px);
+    background-color: rgba(255, 255, 255, 0.3);
 }
 
 .add-btn {
@@ -60,21 +128,23 @@ h1,
 
 
 @media (max-width:768px) {
-    body{
+    body {
         min-height: 120vh;
     }
-    .add-con{
+
+    .add-con {
         width: 80% !important;
 
-    }  
-    
-    .emp-table{
+    }
+
+    .emp-table {
         margin-left: auto !important;
         margin-right: auto !important;
     }
 }
+
 @media (max-width:426px) {
-    .add-con{
+    .add-con {
         width: 90% !important;
-    }    
+    }
 }
