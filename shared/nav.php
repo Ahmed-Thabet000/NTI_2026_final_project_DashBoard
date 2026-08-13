@@ -29,8 +29,8 @@
                         Clients
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="">Add Client</a></li>
-                        <li><a class="dropdown-item" href="">List Clients</a></li>
+                        <li><a class="dropdown-item" href="/Summer_training_2026/NTI_final_project/NTI_2026_final_project_DashBoard/Clients/add.php">Add Client</a></li>
+                        <li><a class="dropdown-item" href="/Summer_training_2026/NTI_final_project/NTI_2026_final_project_DashBoard/Clients/list.php">List Clients</a></li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
