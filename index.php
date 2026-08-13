@@ -76,9 +76,8 @@ include('./shared/nav.php');
                 <p
                     class="mb-4 fw-normal"
                     style="font-size: 1.05rem; color: #e0e0e0; line-height: 2.0;">
-                    Welcome to ANALGIA, your modern destination for fashion and style. We bring together carefully selected products, 
-                    trusted brands, and a seamless shopping experience to make finding what you love easier. Our goal is to offer quality, 
-                    variety, and a simple way to discover the latest trends — all in one place.
+                    Welcome to ANALGIA, your modern destination for fashion and style. We bring together carefully selected products,
+                    trusted brands, and a seamless shopping experience to make finding what you love easier. Our goal is to offer quality, variety, and a simple way to discover the latest trends — all in one place.
             </div>
 
         </div>
@@ -98,7 +97,7 @@ include('./shared/nav.php');
     </div>
 
     <h2
-        class="text-center fw-bold mb-5"
+        class="text-center fw-bolder my-5 pt-5 fs-1"
         style="color: rgb(8, 8, 87);">
         Dashboard Overview
     </h2>
@@ -109,186 +108,196 @@ include('./shared/nav.php');
 
             <a
                 href="./categories/list.php"
-                class="text-decoration-none">
+                class="text-decoration-none stat-card-link">
 
-                <div
-                    class="card shadow-lg home-card"
-                    style="width: 18rem; border: none; background-color: rgb(8, 8, 87);">
-
-                    <div class="card-body d-flex flex-column align-items-center">
-
-                        <i class="bi bi-bag-plus-fill text-white fs-1 py-4"></i>
-
-                        <h5 class="card-title text-white fs-3 py-3">
-                            Categories
-                        </h5>
-
-                        <div class="text-white fw-bold fs-2 pb-4">
-                            <?php echo $countCategories; ?>
+                <div class="stat-card">
+                    <div class="circle-top"></div>
+                    <div class="circle-bottom"></div>
+                    <div class="top-card">
+                        <div class="icon-card">
+                            <i class="bi fs-2 text-white bi-grid-fill"></i>
                         </div>
-
+                        <div class="arrow-card">
+                            <i class="bi fs-5 text-white bi-arrow-up-right"></i>
+                        </div>
                     </div>
 
+                    <div class="card-content">
+                        <h6 class="text-white opacity-75" style="margin-bottom: -1px;">Categories</h6>
+                        <span class="text-white fs-1 fw-bold"><?php echo $countCategories; ?></span>
+                        <p class="text-white opacity-50 " style="font-size: 14px;">Total Categories</p>
+                    </div>
                 </div>
-
             </a>
 
         </div>
+
+
+
+
 
 
         <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center mb-5">
 
             <a
-                href="Brands/list.php"
-                class="text-decoration-none">
+                href="./Brands/list.php"
+                class="text-decoration-none stat-card-link">
 
-                <div
-                    class="card shadow-lg home-card"
-                    style="width: 18rem; border: none; background-color: rgb(8, 8, 87);">
-
-                    <div class="card-body d-flex flex-column align-items-center">
-
-                        <i class="bi bi-collection-fill text-white fs-1 py-4"></i>
-
-                        <h5 class="card-title text-white fs-3 py-3">
-                            Brands
-                        </h5>
-
-                        <div class="text-white fw-bold fs-2 pb-4">
-                            <?php echo $countBrands; ?>
+                <div class="stat-card">
+                    <div class="circle-top"></div>
+                    <div class="circle-bottom"></div>
+                    <div class="top-card">
+                        <div class="icon-card">
+                            <i class="bi fs-2 text-white bi-tags-fill"></i>
                         </div>
-
+                        <div class="arrow-card">
+                            <i class="bi fs-5 text-white bi-arrow-up-right"></i>
+                        </div>
                     </div>
 
+                    <div class="card-content">
+                        <h6 class="text-white opacity-75" style="margin-bottom: -1px;">Brands</h6>
+                        <span class="text-white fs-1 fw-bold"><?php echo $countBrands; ?></span>
+                        <p class="text-white opacity-50 " style="font-size: 14px;">Total Brands</p>
+                    </div>
                 </div>
-
             </a>
 
         </div>
+
+
+
+
+
 
 
         <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center mb-5">
 
             <a
                 href="./products/list_products.php"
-                class="text-decoration-none">
+                class="text-decoration-none stat-card-link">
 
-                <div
-                    class="card shadow-lg home-card"
-                    style="width: 18rem; border: none; background-color: rgb(8, 8, 87);">
-
-                    <div class="card-body d-flex flex-column align-items-center">
-
-                        <i class="bi bi-cart-plus-fill text-white fs-1 py-4"></i>
-
-                        <h5 class="card-title text-white fs-3 py-3">
-                            Products
-                        </h5>
-
-                        <div class="text-white fw-bold fs-2 pb-4">
-                            <?php echo $countProducts; ?>
+                <div class="stat-card">
+                    <div class="circle-top"></div>
+                    <div class="circle-bottom"></div>
+                    <div class="top-card">
+                        <div class="icon-card">
+                            <i class="bi fs-2 text-white bi-bag-plus-fill"></i>
                         </div>
-
+                        <div class="arrow-card">
+                            <i class="bi fs-5 text-white bi-arrow-up-right"></i>
+                        </div>
                     </div>
 
+                    <div class="card-content">
+                        <h6 class="text-white opacity-75" style="margin-bottom: -1px;">Products</h6>
+                        <span class="text-white fs-1 fw-bold"><?php echo $countProducts; ?></span>
+                        <p class="text-white opacity-50 " style="font-size: 14px;">Total Products</p>
+                    </div>
                 </div>
-
             </a>
 
         </div>
+
+
+
+
 
 
         <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center mb-5">
 
             <a
-                href="Clients/list.php"
-                class="text-decoration-none">
+                href="./Employees/list.php"
+                class="text-decoration-none stat-card-link">
 
-                <div
-                    class="card shadow-lg home-card"
-                    style="width: 18rem; border: none; background-color: rgb(8, 8, 87);">
-
-                    <div class="card-body d-flex flex-column align-items-center">
-
-                        <i class="bi bi-person-fill text-white fs-1 py-4"></i>
-
-                        <h5 class="card-title text-white fs-3 py-3">
-                            Clients
-                        </h5>
-
-                        <div class="text-white fw-bold fs-2 pb-4">
-                            <?php echo $countClients; ?>
+                <div class="stat-card">
+                    <div class="circle-top"></div>
+                    <div class="circle-bottom"></div>
+                    <div class="top-card">
+                        <div class="icon-card">
+                            <i class="bi fs-2 text-white bi-people-fill"></i>
                         </div>
-
+                        <div class="arrow-card">
+                            <i class="bi fs-5 text-white bi-arrow-up-right"></i>
+                        </div>
                     </div>
 
+                    <div class="card-content">
+                        <h6 class="text-white opacity-75" style="margin-bottom: -1px;">Employees</h6>
+                        <span class="text-white fs-1 fw-bold"><?php echo $countEmployees; ?></span>
+                        <p class="text-white opacity-50 " style="font-size: 14px;">Total Employees</p>
+                    </div>
                 </div>
-
             </a>
 
         </div>
+
+
+
+
 
 
         <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center mb-5">
 
             <a
-                href="Employees/list.php"
-                class="text-decoration-none">
+                href="./Partners/list_partner.php"
+                class="text-decoration-none stat-card-link">
 
-                <div
-                    class="card shadow-lg home-card"
-                    style="width: 18rem; border: none; background-color: rgb(8, 8, 87);">
-
-                    <div class="card-body d-flex flex-column align-items-center">
-
-                        <i class="bi bi-headset text-white fs-1 py-4"></i>
-
-                        <h5 class="card-title text-white fs-3 py-3">
-                            Employees
-                        </h5>
-
-                        <div class="text-white fw-bold fs-2 pb-4">
-                            <?php echo $countEmployees; ?>
+                <div class="stat-card">
+                    <div class="circle-top"></div>
+                    <div class="circle-bottom"></div>
+                    <div class="top-card">
+                        <div class="icon-card">
+                            <i class="bi fs-2 text-white bi-buildings-fill"></i>
                         </div>
-
+                        <div class="arrow-card">
+                            <i class="bi fs-5 text-white bi-arrow-up-right"></i>
+                        </div>
                     </div>
 
+                    <div class="card-content">
+                        <h6 class="text-white opacity-75" style="margin-bottom: -1px;">Partners</h6>
+                        <span class="text-white fs-1 fw-bold"><?php echo $countPartners; ?></span>
+                        <p class="text-white opacity-50 " style="font-size: 14px;">Total Partners</p>
+                    </div>
                 </div>
-
             </a>
 
         </div>
+
+
+
+
 
 
         <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center mb-5">
 
             <a
-                href="Partners/list_partner.php"
-                class="text-decoration-none">
+                href="./Clients/list.php"
+                class="text-decoration-none stat-card-link">
 
-                <div
-                    class="card shadow-lg home-card"
-                    style="width: 18rem; border: none; background-color: rgb(8, 8, 87);">
-
-                    <div class="card-body d-flex flex-column align-items-center">
-
-                        <i class="bi bi-buildings-fill text-white fs-1 py-4"></i>
-
-                        <h5 class="card-title text-white fs-3 py-3">
-                            Partners
-                        </h5>
-
-                        <div class="text-white fw-bold fs-2 pb-4">
-                            <?php echo $countPartners; ?>
+                <div class="stat-card">
+                    <div class="circle-top"></div>
+                    <div class="circle-bottom"></div>
+                    <div class="top-card">
+                        <div class="icon-card">
+                            <i class="bi fs-2 text-white bi-person-fill"></i>
                         </div>
-
+                        <div class="arrow-card">
+                            <i class="bi fs-5 text-white bi-arrow-up-right"></i>
+                        </div>
                     </div>
 
+                    <div class="card-content">
+                        <h6 class="text-white opacity-75" style="margin-bottom: -1px;">Clients</h6>
+                        <span class="text-white fs-1 fw-bold"><?php echo $countClients; ?></span>
+                        <p class="text-white opacity-50 " style="font-size: 14px;">Total Clients</p>
+                    </div>
                 </div>
-
             </a>
 
         </div>
+
 
     </div>
 
