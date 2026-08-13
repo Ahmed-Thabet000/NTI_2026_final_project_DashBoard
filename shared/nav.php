@@ -11,8 +11,8 @@
                         Categories
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="">Add Category</a></li>
-                        <li><a class="dropdown-item" href="">List Categories</a></li>
+                        <li><a class="dropdown-item" href="/Summer_training_2026/NTI_final_project/NTI_2026_final_project_DashBoard/categories/add.php">Add Category</a></li>
+                        <li><a class="dropdown-item" href="/Summer_training_2026/NTI_final_project/NTI_2026_final_project_DashBoard/categories/list.php">List Categories</a></li>
                     </ul>
                 </li>
                <li class="nav-item dropdown">
@@ -22,13 +22,13 @@
 
     <ul class="dropdown-menu">
         <li>
-            <a class="dropdown-item" href="/NTI_2026_final_project_DashBoard/products/add_product.php">
+            <a class="dropdown-item" href="/Summer_training_2026/NTI_final_project/NTI_2026_final_project_DashBoard/products/add_product.php">
                 Add Product
             </a>
         </li>
 
         <li>
-            <a class="dropdown-item" href="/NTI_2026_final_project_DashBoard/products/list_products.php">
+            <a class="dropdown-item" href="/Summer_training_2026/NTI_final_project/NTI_2026_final_project_DashBoard/products/list_products.php">
                 List Products
             </a>
         </li>
@@ -48,8 +48,8 @@
                         Brands
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="">Add Brands</a></li>
-                        <li><a class="dropdown-item" href="">List Brands</a></li>
+                        <li><a class="dropdown-item" href="/Summer_training_2026/NTI_final_project/NTI_2026_final_project_DashBoard/Brands/add_product.php">Add Brands</a></li>
+                        <li><a class="dropdown-item" href="/Summer_training_2026/NTI_final_project/NTI_2026_final_project_DashBoard/Brands/list_product.php">List Brands</a></li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
