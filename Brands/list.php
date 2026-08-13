@@ -29,8 +29,7 @@ $brands = $result->fetch_all(MYSQLI_ASSOC);
         <a
             class="add-btn"
             href="add.php"
-            style="background: rgb(8, 8, 87); color: white; padding: 10px 20px; border-radius: 6px; text-decoration: none;"
-        >
+            style="background: rgb(8, 8, 87); color: white; padding: 10px 20px; border-radius: 6px; text-decoration: none;">
             + Add New
         </a>
     </div>
@@ -51,73 +50,74 @@ $brands = $result->fetch_all(MYSQLI_ASSOC);
 
         </tr>
 
-        <?php foreach($brands as $brand): ?>
+        <?php foreach ($brands as $brand): ?>
 
-        <tr style="border-bottom: 1px solid #e2e8f0;">
+            <tr style="border-bottom: 1px solid #e2e8f0;">
 
-            <td style="padding: 15px;">
-                <?= $brand['id'] ?>
-            </td>
+                <td style="padding: 15px;">
+                    <?= $brand['id'] ?>
+                </td>
 
-            <td style="padding: 15px;">
+                <td style="padding: 15px;">
 
-                <?php if (!empty($brand['image'])): ?>
+                    <?php if (!empty($brand['image'])): ?>
 
-                    <img
-                        src="../uploads/brands/<?= htmlspecialchars($brand['image']) ?>"
-                        width="80"
-                        height="80"
-                        style="object-fit: cover; border-radius: 8px;"
-                    >
+                        <img
+                            src="../uploads/brands/<?= htmlspecialchars($brand['image']) ?>"
+                            width="80"
+                            height="80"
+                            style="object-fit: cover; border-radius: 8px;">
 
-                <?php else: ?>
+                    <?php else: ?>
 
-                    No Image
+                        No Image
 
-                <?php endif; ?>
+                    <?php endif; ?>
 
-            </td>
+                </td>
 
-            <td style="padding: 15px;">
-                <?= htmlspecialchars($brand['name']) ?>
-            </td>
+                <td style="padding: 15px;">
+                    <?= htmlspecialchars($brand['name']) ?>
+                </td>
 
-            <td style="padding: 15px;">
+                <td style="padding: 15px;">
 
-                <?php if (!empty($brand['collab_date'])): ?>
+                    <?php if (!empty($brand['collab_date'])): ?>
 
-                    <?= htmlspecialchars($brand['collab_date']) ?>
+                        <?= htmlspecialchars($brand['collab_date']) ?>
 
-                <?php else: ?>
+                    <?php else: ?>
 
-                    Not Set
+                        Not Set
 
-                <?php endif; ?>
+                    <?php endif; ?>
 
-            </td>
+                </td>
 
-            <td style="padding: 15px; text-align: center;">
+                <td style="padding: 15px; text-align: center;">
 
-                <a
-                    href="edit.php?id=<?= $brand['id'] ?>"
-                    title="Edit"
-                    style="color: #2563eb; font-size: 18px; margin-right: 15px; text-decoration: none;"
-                >
-                    <i class="bi bi-pencil-square"></i>
-                </a>
+                    <div style="display: flex; justify-content: center; align-items: center; gap: 12px; white-space: nowrap;">
 
-                <a
-                    href="delete.php?id=<?= $brand['id'] ?>"
-                    title="Delete"
-                    style="color: #dc2626; font-size: 18px; text-decoration: none;"
-                    onclick="return confirm('Are you sure you want to delete this brand?');"
-                >
-                    <i class="bi bi-trash-fill"></i>
-                </a>
+                        <a
+                            href="edit.php?id=<?= $brand['id'] ?>"
+                            title="Edit"
+                            style="color: #2563eb; font-size: 18px; text-decoration: none;">
+                            <i class="bi bi-pencil-square"></i>
+                        </a>
 
-            </td>
+                        <a
+                            href="delete.php?id=<?= $brand['id'] ?>"
+                            title="Delete"
+                            style="color: #dc2626; font-size: 18px; text-decoration: none;"
+                            onclick="return confirm('Are you sure you want to delete this brand?');">
+                            <i class="bi bi-trash-fill"></i>
+                        </a>
 
-        </tr>
+                    </div>
+
+                </td>
+
+            </tr>
 
         <?php endforeach; ?>
 

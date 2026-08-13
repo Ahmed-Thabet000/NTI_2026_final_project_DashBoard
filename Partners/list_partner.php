@@ -32,8 +32,7 @@ $partners = $result->fetch_all(MYSQLI_ASSOC);
         <a
             class="add-btn"
             href="add_partner.php"
-            style="background: rgb(8, 8, 87); color: white; padding: 10px 20px; border-radius: 6px; text-decoration: none;"
-        >
+            style="background: rgb(8, 8, 87); color: white; padding: 10px 20px; border-radius: 6px; text-decoration: none;">
             + Add New
         </a>
     </div>
@@ -72,8 +71,7 @@ $partners = $result->fetch_all(MYSQLI_ASSOC);
                                 src="../uploads/partners/<?= htmlspecialchars($partner['image']) ?>"
                                 width="80"
                                 height="80"
-                                style="object-fit: cover; border-radius: 8px;"
-                            >
+                                style="object-fit: cover; border-radius: 8px;">
 
                         <?php else: ?>
 
@@ -103,22 +101,24 @@ $partners = $result->fetch_all(MYSQLI_ASSOC);
 
                     <td style="padding: 15px; text-align: center;">
 
-                        <a
-                            href="edit_partner.php?id=<?= $partner['id'] ?>"
-                            title="Edit"
-                            style="color: #2563eb; font-size: 18px; margin-right: 15px; text-decoration: none;"
-                        >
-                            <i class="bi bi-pencil-square"></i>
-                        </a>
+                        <div style="display: flex; justify-content: center; align-items: center; gap: 12px; white-space: nowrap;">
 
-                        <a
-                            href="delete_partner.php?id=<?= $partner['id'] ?>"
-                            title="Delete"
-                            style="color: #dc2626; font-size: 18px; text-decoration: none;"
-                            onclick="return confirm('Are you sure you want to delete this partner?');"
-                        >
-                            <i class="bi bi-trash-fill"></i>
-                        </a>
+                            <a
+                                href="edit_partner.php?id=<?= $partner['id'] ?>"
+                                title="Edit"
+                                style="color: #2563eb; font-size: 18px; text-decoration: none;">
+                                <i class="bi bi-pencil-square"></i>
+                            </a>
+
+                            <a
+                                href="delete_partner.php?id=<?= $partner['id'] ?>"
+                                title="Delete"
+                                style="color: #dc2626; font-size: 18px; text-decoration: none;"
+                                onclick="return confirm('Are you sure you want to delete this partner?');">
+                                <i class="bi bi-trash-fill"></i>
+                            </a>
+
+                        </div>
 
                     </td>
 
